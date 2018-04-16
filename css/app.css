@@ -46,6 +46,16 @@ a:hover {
   color: #fff;
 }
 
+.menu li:last-child {
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu li:last-child span {
+  font-size: 14px;
+}
+
 /*======================= content-setting ===================*/
 .content-setting .title-setting_inner {
   margin: 50px 0;

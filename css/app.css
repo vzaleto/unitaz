@@ -11,7 +11,7 @@ ul {
 
 .nav-top {
   padding: 15px 0;
-  background: #7bceff;
+  background: radial-gradient(circle, #00adee 62%, #006cb4);
 }
 
 .nav-top .text-logo {
@@ -54,6 +54,190 @@ a:hover {
 
 .menu li:last-child span {
   font-size: 14px;
+}
+
+/*===================== description =================*/
+h1 {
+  font-size: 29px;
+  text-align: center;
+  width: 74%;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.title-generale {
+  background: radial-gradient(circle, #fdb813 50%, #fa9a0b 90%);
+  padding: 0 0 25px 0;
+  margin: 0 0 -35px;
+}
+
+.bg-tri {
+  width: 100%;
+  height: 50px;
+}
+
+.bottom-triangle {
+  width: 100%;
+  height: 66px;
+  margin-bottom: -86px;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.content-description {
+  position: relative;
+  padding: 100px 0 50px 0;
+  margin: 15px 0 0 0;
+  background: radial-gradient(circle, #00adee 62%, #006cb4);
+}
+
+.content-description .img-inner {
+  float: left;
+  width: 51%;
+  margin: 0 25px 0 0;
+  position: relative;
+}
+
+.content-description .img-inner .img-description_inner {
+  width: 90%;
+  padding: 10px 136px 12px 4px;
+}
+
+.content-description .img-inner .img-description_inner img {
+  width: 100%;
+}
+
+.content-description .text-exposition_primary {
+  float: left;
+  width: 46%;
+  position: relative;
+}
+
+.content-description .text-exposition_primary .text-exposition_inner:nth-child(1) {
+  top: -40px;
+  left: -65px;
+  position: absolute;
+  width: 82%;
+}
+
+.content-description .text-exposition_primary .text-exposition_inner:nth-child(2) {
+  top: 129px;
+  left: 183px;
+  position: absolute;
+  width: 72%;
+}
+
+.content-description .text-exposition_primary .text-exposition_inner:nth-child(3) {
+  top: 288px;
+  left: 93px;
+  width: 97%;
+  position: absolute;
+}
+
+.content-description .text-exposition_primary .text-exposition_inner:nth-child(4) {
+  top: 455px;
+  left: 0;
+  position: absolute;
+  width: 50%;
+}
+
+.content-description .text-exposition_primary .text-exposition_inner:nth-child(5) {
+  top: 455px;
+  left: 0;
+  position: absolute;
+  width: 50%;
+}
+
+.content-description .text-exposition {
+  padding: 13px 28px 6px 28px;
+  margin: 10px 0 10px 0;
+  border: 5px solid #6b898e;
+  border-radius: 8px;
+  position: relative;
+  width: 99%;
+  font-size: 14px;
+  line-height: 1.5;
+  background: #fff3dc;
+}
+
+.content-description:after {
+  content: "";
+  clear: both;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 50%;
+  /* ширина в два раза меньше высоты, иначе получится полуовал */
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: mistyrose;
+}
+
+.text-exposition:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 18px;
+  bottom: -36px;
+  border: 18px solid;
+  border-color: #8e939c transparent transparent #8e939c;
+}
+
+.text-exposition:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 22px;
+  bottom: -26px;
+  border: 15px solid;
+  border-color: #fff3dc transparent transparent #fff3dc;
+}
+
+.arrow-inner img {
+  width: 100%;
+}
+
+.arrow-inner .arrow-img:nth-child(1) {
+  position: absolute;
+  top: 210px;
+  right: 42px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 18%;
+}
+
+.arrow-inner .arrow-img:nth-child(2) {
+  position: absolute;
+  top: 358px;
+  right: -40px;
+  width: 18%;
+}
+
+.arrow-inner .arrow-img:nth-child(3) {
+  position: absolute;
+  bottom: 117px;
+  right: 0;
+  -webkit-transform: rotate(22deg);
+      -ms-transform: rotate(22deg);
+          transform: rotate(22deg);
+  width: 18%;
+}
+
+.bottom-triangle_description {
+  width: 100%;
+  height: 66px;
+  margin-bottom: -52px;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 /*======================= content-setting ===================*/
@@ -215,48 +399,6 @@ a:hover {
   padding: 23px 0px 0px 27px;
 }
 
-.content-description {
-  position: relative;
-  padding: 50px 0 50px 0;
-  margin: 85px 0 0 0;
-}
-
-.content-description .img-inner {
-  float: left;
-  width: 46%;
-  padding: 10px 119px 12px 4px;
-  margin: 0 25px 0 0;
-}
-
-.content-description .img-inner img {
-  width: 100%;
-}
-
-.content-description .text-exposition {
-  float: left;
-  width: 46%;
-  padding: 22px 25px;
-  margin: 129px 0 0 57px;
-  border: 1px solid #6b898e;
-  border-radius: 8px;
-  position: relative;
-}
-
-.content-description:after {
-  content: "";
-  clear: both;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 50%;
-  /* ширина в два раза меньше высоты, иначе получится полуовал */
-  height: 100%;
-  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-  background: mistyrose;
-}
-
 .content-improve .item-margin {
   margin: 0 0 120px 0;
 }
@@ -265,29 +407,21 @@ a:hover {
   margin: 100px 0;
 }
 
-.text-exposition:before {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 18px;
-  bottom: -24px;
-  border: 12px solid;
-  border-color: #8e939c transparent transparent #8e939c;
-}
-
-.text-exposition:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 19px;
-  bottom: -22px;
-  border: 11px solid;
-  border-color: #fff transparent transparent #fff;
-}
-
 /*================= feaures ===================*/
+.content-features {
+  padding: 50px 0 50px 0;
+  margin: 50px 0 50px 0;
+}
+
+.item-features {
+  text-align: center;
+}
+
+.item-features h4 {
+  font-size: 17px;
+  margin: 20px 0 20px 0;
+}
+
 .img-features {
   width: 100%;
 }
@@ -304,6 +438,12 @@ a:hover {
   font-weight: 600;
   font-size: 16px;
   border-radius: 3px;
+}
+
+.text-features {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /*================ form ==================*/

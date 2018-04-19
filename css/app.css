@@ -120,35 +120,35 @@ h1 {
   top: -40px;
   left: -65px;
   position: absolute;
-  width: 82%;
+  width: 44%;
 }
 
 .content-description .text-exposition_primary .text-exposition_inner:nth-child(2) {
-  top: 129px;
-  left: 183px;
+  top: 86px;
+  left: 163px;
   position: absolute;
-  width: 72%;
+  width: 56%;
 }
 
 .content-description .text-exposition_primary .text-exposition_inner:nth-child(3) {
-  top: 288px;
-  left: 93px;
-  width: 97%;
+  top: 353px;
+  left: 178px;
+  width: 61%;
   position: absolute;
 }
 
 .content-description .text-exposition_primary .text-exposition_inner:nth-child(4) {
-  top: 455px;
-  left: 0;
+  top: 485px;
+  left: 100px;
   position: absolute;
-  width: 50%;
+  width: 62%;
 }
 
 .content-description .text-exposition_primary .text-exposition_inner:nth-child(5) {
-  top: 455px;
-  left: 0;
+  top: 207px;
+  left: 18px;
   position: absolute;
-  width: 50%;
+  width: 63%;
 }
 
 .content-description .text-exposition {
@@ -240,7 +240,19 @@ h1 {
   z-index: 1;
 }
 
+.text-up {
+  text-transform: uppercase;
+  color: #006cb4;
+  font-weight: 600;
+}
+
 /*======================= content-setting ===================*/
+.content-setting {
+  background: #f3f3f3;
+  margin: -19px 0 0 0;
+  padding: 50px 0 100px 0;
+}
+
 .content-setting .title-setting_inner {
   margin: 50px 0;
 }
@@ -267,7 +279,7 @@ h1 {
   width: 19%;
   margin: 5px 5px;
   height: 155.2px;
-  background: #f17f5f;
+  background: radial-gradient(circle, #fdb813 50%, #fa9a0b 90%);
 }
 
 .galery-img .text-inner h4 {
@@ -292,28 +304,37 @@ h1 {
   float: left;
 }
 
+.title-setting:after {
+  content: "";
+  clear: both;
+  display: block;
+  width: 332px;
+  height: 2px;
+  background: #f17f5f;
+  position: relative;
+  top: -24px;
+  left: -186px;
+}
+
 .title-setting h3 {
-  font-size: 22px;
+  font-size: 25px;
   text-align: center;
-  width: 250px;
-  background: #fff;
+  width: 290px;
+  background: #f3f3f3;
   text-transform: uppercase;
   position: relative;
   float: left;
   left: -50%;
+  z-index: 1;
 }
 
-.title-setting h3:after {
-  content: "";
-  clear: both;
-  display: block;
-  width: 286px;
-  height: 2px;
-  background: #f17f5f;
+.bottom-triangle_setting {
+  width: 100%;
+  height: 66px;
+  margin-bottom: -52px;
+  background-color: transparent;
   position: relative;
-  top: -16px;
-  left: -17px;
-  z-index: -1;
+  z-index: 1;
 }
 
 /*===================== content improve =========================*/
@@ -326,8 +347,41 @@ h1 {
   left: -19px;
 }
 
+.title-setting.improve {
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.title-setting.improve:after {
+  content: "";
+  clear: both;
+  display: block;
+  width: 376px;
+  height: 2px;
+  background: #fff;
+  position: relative;
+  top: -24px;
+  left: -199px;
+}
+
+.title-setting.improve h3 {
+  font-size: 25px;
+  text-align: center;
+  width: 321px;
+  color: #fff;
+  background: #00adee;
+  text-transform: uppercase;
+  position: relative;
+  float: left;
+  left: -46%;
+  z-index: 1;
+}
+
 .content-improve {
-  margin: 100px 0 0 0;
+  padding: 100px 0 0 0;
+  background: radial-gradient(circle, #00adee 62%, #006cb4);
+  margin: -19px 0 0 0;
 }
 
 .content-improve .item-improve {
@@ -335,8 +389,10 @@ h1 {
   float: left;
   padding: 74px 7px 24px 7px;
   text-align: center;
-  -webkit-box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.75);
+  color: #005390;
+  background: #fff;
+  border: 3px solid #ffad00;
+  border-radius: 6px;
 }
 
 .content-improve .item-improve .item-icon_inner {
@@ -355,10 +411,10 @@ h1 {
   height: 100px;
   position: absolute;
   top: -47px;
-  left: 43%;
+  left: 31%;
   padding: 17px 17px;
-  background: #9adeff;
-  border: 2px solid #fff;
+  background: #00f3ff;
+  border: 2px solid #ff0;
   border-radius: 5px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -368,34 +424,40 @@ h1 {
 }
 
 .item-improve h4 {
+  text-transform: uppercase;
   padding: 0 30px 0 30px;
+  font-size: 18px;
 }
 
-.content-improve .col-md-6:first-child .item-improve {
-  padding: 74px 7px 43px 7px;
+.item-improve p {
+  font-size: 16px;
 }
 
-.content-improve .col-md-6:nth-child(2) .item-improve {
+.content-improve .col-md-3:first-child .item-improve {
+  padding: 74px 7px 23px 7px;
+}
+
+.content-improve .col-md-3:nth-child(2) .item-improve {
   padding: 74px 7px 44px 7px;
 }
 
-.content-improve .col-md-6:nth-child(3) .item-improve {
+.content-improve .col-md-3:nth-child(3) .item-improve {
   padding: 74px 7px 43px 7px;
 }
 
-.content-improve .col-md-6:first-child .item-icon {
+.content-improve .col-md-3:first-child .item-icon {
   padding: 21px 17px 17px 22px;
 }
 
-.content-improve .col-md-6:nth-child(2) .item-icon {
+.content-improve .col-md-3:nth-child(2) .item-icon {
   padding: 35px 0px 0px 24px;
 }
 
-.content-improve .col-md-6:nth-child(3) .item-icon {
+.content-improve .col-md-3:nth-child(3) .item-icon {
   padding: 28px 0px 0px 22px;
 }
 
-.content-improve .col-md-6:nth-child(4) .item-icon {
+.content-improve .col-md-3:nth-child(4) .item-icon {
   padding: 23px 0px 0px 27px;
 }
 
@@ -404,7 +466,7 @@ h1 {
 }
 
 .content-improve .title-setting_inner {
-  margin: 100px 0;
+  margin: 0px 0px 137px 0;
 }
 
 /*================= feaures ===================*/
@@ -415,11 +477,18 @@ h1 {
 
 .item-features {
   text-align: center;
+  color: #005390;
 }
 
 .item-features h4 {
-  font-size: 17px;
+  font-size: 18px;
   margin: 20px 0 20px 0;
+  text-transform: uppercase;
+  margin: 48px 0px 28px 0;
+}
+
+.item-features p {
+  font-size: 16px;
 }
 
 .img-features {
@@ -438,12 +507,21 @@ h1 {
   font-weight: 600;
   font-size: 16px;
   border-radius: 3px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 142px;
+}
+
+.btn-feature:hover {
+  width: 162px;
+  color: #005390;
+  border-color: #005390;
 }
 
 .text-features {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  height: 69px;
 }
 
 /*================ form ==================*/
@@ -465,10 +543,13 @@ h1 {
   -webkit-box-shadow: none;
           box-shadow: none;
   height: 47px;
-  background: #fff;
   width: 18%;
-  background: #f17f5f;
+  background: #fa9a0b;
   color: #fff;
+}
+
+.form .coll-back:hover {
+  background: #f7663d;
 }
 
 .content-form {
@@ -500,7 +581,7 @@ h1 {
 }
 
 .footer {
-  background: #df7021;
+  background: radial-gradient(circle, #fdb813 50%, #fa9a0b 90%);
   padding: 50px 0;
 }
 

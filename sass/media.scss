@@ -82,8 +82,24 @@
 			}
 		} 
 	} 
+.galery-img{
+	.text-inner{
+		
+		h4{
+			padding: 54px 0 48px 0;
+		}
+		&:last-child{
+			h4{
+				padding: 41px 0 23px 0;
 
+			}
+		}	
+	}
+}
+.text-exposition {
+    padding: 6px 9px 0px 12px;
 
+}
 	
 } 
 
@@ -194,12 +210,28 @@
 		margin: 0 0px 12px 0;
 	}
 } 
-
+.text-inner_absolut{
+	display: block;
+}
+.menu{
+	li{
+		a {
+			display: block;
+			padding: 10px 8px;
+			color: #fff;
+			font-size: 15px;
+		}
+	}
+} 
 
 }
 
 
 @media only screen and (max-width : 768px){
+	body {
+    
+    padding: 67px 0 0 0;
+}
 	.menu-trigger {
 		display: block;
 		float: right;
@@ -213,19 +245,32 @@
 	.nav-top{
 		.menu{
 			display: none;
-			float: left;
-			width: 100%;
-			position: absolute;
-			top: 67px;
-			left: 0;
-			background: rebeccapurple;
-			opacity: 0.9;
+			    float: none;
+    width: 100%;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    background: rgba(255,255,255, 0.7);
+
+   
 			li{
 				float: none;
 				width: 100%;
+				a{
+					color:#002286;
+					font-weight: 600;
+				}
 			}
 		}
 	}
+	.menu{
+		li:last-child {
+    padding: 0px 0 10px 10px; 
+    color: #002286;
+    font-weight: 600;
+    
+}
+	} 
 	.content-description{
 		.img-inner{
 			width: 100%;
@@ -243,12 +288,28 @@
 		padding: 25px 0 0 20px;
 		float: none;
 	}
-
+.title-setting.improve {
+		position: static;
+		float: none;
+		h3 {
+			width: 100%;
+			background: transparent;
+			position: static;
+			float: none;
+			z-index: 0;
+		}
+	}
+	.title-setting.improve:after {
+		content: none;
+	}
 
 
 }
 
 @media only screen and (max-width : 680px){
+	h1 {
+    font-size: 24px;
+}
 	.footer-info {
 		width: 74%;
 		margin: 0 auto;
@@ -328,20 +389,7 @@
 			} 
 		} 
 	}	
-	.title-setting.improve {
-		position: static;
-		float: none;
-		h3 {
-			width: 100%;
-			background: transparent;
-			position: static;
-			float: none;
-			z-index: 0;
-		}
-	}
-	.title-setting.improve:after {
-		content: none;
-	}
+	
 	.content-improve{
 		.title-setting_inner {
 			margin: 0px 0px 112px 0;
@@ -358,12 +406,7 @@
 
 @media only screen and (max-width : 320px){
 	.galery-img{	
-		&:nth-child(9) .text-inner_absolut h4{
-			padding: 11px 0 11px 0;
-			font-size: 15px;
-		}
-		.img-inner {
-			
+		.img-inner {			
 			margin: 14px auto;
 			.text-inner_absolut{
 				h4 {
@@ -372,6 +415,20 @@
 				}
 			}
 		} 
+	}
+
+
+	.galery-img{	
+		.img-inner{
+			&:nth-child(9){
+				.text-inner_absolut{
+					h4 {
+						padding: 11px 0 11px 0;
+						font-size: 15px;
+					}
+				}
+			}	
+		}
 	}
 	.item-improve{
 		.item-icon {

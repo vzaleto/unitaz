@@ -45,10 +45,10 @@
              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
             </button>
           <ul class="menu">
-              <li><a href="">Установка</a></li>
-              <li><a href="">Приемущества</a></li>
-              <li><a href="">Характеристики</a></li>
-              <li><a href="">Контакты</a></li>
+              <li><a href="#content-setting" class="navigation">Установка</a></li>
+              <li><a href="#content-improve" class="navigation">Приемущества</a></li>
+              <li><a href="#content-features" class="navigation">Характеристики</a></li>
+              <li><a href="#footer" class="navigation">Контакты</a></li>
               <li><span>+38 (068)</span> 94 90 070</li>
           </ul>
           
@@ -61,10 +61,10 @@
  <svg class="bottom-triangle" viewBox="0 0 100 100" preserveAspectRatio="none">
  <defs>
       <linearGradient id="RadialGradient1">
-        <stop offset="0%" stop-color="#fa9a0b"/>
-        <stop offset="25%" stop-color="#fdb813"/>
-        <stop offset="75%" stop-color="#fdb813"/>
-        <stop offset="100%" stop-color="#fa9a0b"/>  
+        <stop offset="15%" stop-color="#fa9a0b"/>
+        <stop offset="41%" stop-color="#fbaa0f"/>
+        <stop offset="58%" stop-color="#fbaa0f"/>
+        <stop offset="87%" stop-color="#fa9a0b"/>  
       </linearGradient>
   </defs>
  <path d="M0 0, L 100 0, 50 50" id="footer-curve" fill="url(#RadialGradient1)"></path>
@@ -117,14 +117,14 @@
  <defs>
       <linearGradient id="RadialGradient2">
         <stop offset="0%" stop-color="#006cb4"/>
-        <stop offset="25%" stop-color="#00adee"/>
-        <stop offset="75%" stop-color="#00adee"/>
+        <stop offset="35%" stop-color="#00adee"/>
+        <stop offset="65%" stop-color="#00adee"/>
         <stop offset="100%" stop-color="#006cb4"/>  
       </linearGradient>
   </defs>
  <path d="M0 0, L 100 0, 50 50" id="footer-curve" fill="url(#RadialGradient2)""></path>
  </svg>
-  <div class="content-setting">
+  <div class="content-setting" id="content-setting">
     <div class="container">
         <div class="title-setting_inner">
             <div class="title-setting">
@@ -175,7 +175,7 @@
   </defs>
  <path d="M0 0, L 100 0, 50 50" id="footer-curve" fill="url(#RadialGradient3)""></path>
  </svg>
-<div class="content-improve">
+<div class="content-improve" id="content-improve">
    <div class="title-setting_inner ">
         <div class="title-setting improve">
             <h3>Наши приемущества</h3>
@@ -231,18 +231,10 @@
     </div>
 </div>
 <svg class="bottom-triangle_description" viewBox="0 0 100 100" preserveAspectRatio="none">
- <defs>
-      <linearGradient id="RadialGradient4">
-        <stop offset="0%" stop-color="#006cb4"/>
-        <stop offset="25%" stop-color="#00adee"/>
-        <stop offset="75%" stop-color="#00adee"/>
-        <stop offset="100%" stop-color="#006cb4"/>  
-      </linearGradient>
-  </defs>
- <path d="M0 0, L 100 0, 50 50" id="footer-curve" fill="url(#RadialGradient4)""></path>
+ <path d="M0 0, L 100 0, 50 50" id="footer-curve" fill="url(#RadialGradient2)""></path>
  </svg>
 
-<div class="content-features">
+<div class="content-features" id="content-features">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -251,10 +243,10 @@
                         <img src="img/pic-15.png" alt="">
                     </div>
                     <h4>Электрическое гигиеническое сиденье для унитаза</h4>
-                    <p class="text-features">
+                    <p class="text-features item-hide_left">
                         Инновационное устройство в сфере digital, smart, gadget technology. Создано для обеспеченя потребностей человека в связи с  улучшением качества жизни. Оснащён микро компьютером для саморегуляции замены плёнки на строго на 1 посещение. Без необходимости прикасаться к стульчаку. Посетители быстро оценят данное изобретение.
                     </p>
-                    <a href="#" class="btn-feature" >Подробнее</a>
+                    <button href="#" class="btn-feature show-item_left" >Подробнее</button>
                 </div>
             </div>
             <!-- <div class="col-md-4">
@@ -275,10 +267,10 @@
                         <img src="img/pic-18.png" alt="">
                     </div>
                     <h4>Гигиеическое сменное покрытие(руллон)</h4>
-                    <p class="text-features">
+                    <p class="text-features item-hide_center">
                         Гигиеничесое сменное покрытие обеспечивае чистоту сидения. Предотвращает появлению, размножение и переносу бактерий. Встроенный чип регулирует количество перемотанной плёнки. Лёгкая заамена плёнки. Покрытие изготовлено из полиэтилена высокой плотности. Предаёт прекрасное настроение.  
                     </p>
-                    <a href="#" class="btn-feature">Подробнее</a>
+                    <buttonbutton href="#" class="btn-feature show-item_center">Подробнее</buttonbutton>
                 </div>
             </div>
             <div class="col-md-4">
@@ -287,10 +279,10 @@
                         <img src="img/pic-16.png" alt="">
                     </div>
                     <h4>Автоматическое гигиеническое сиденье на унитаз</h4>
-                    <p class="text-features">
+                    <p class="text-features item-hide_right">
                         Данное гигиеническое сиденье прекассный способ подчеркнуть статус компании которая заботится о своих сотрудниках и клиентах. Эстетичесий вид гигиенического сиденья внушет полную безопасность и желание использовать именно его а не давно привычные нам стульчаки от одного вида которых может пропасть даже само желание ради которого вы перед ним оказались ).
                     </p>
-                    <a href="#" class="btn-feature">Подробнее</a>
+                    <button href="#" class="btn-feature show-item_right">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -308,8 +300,20 @@
         </div>
     </div>
 </div>
-<svg class="bottom-cta-section-curve" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100, C 25 0, 75 0, 100 100" id="footer-curve" fill="url(#RadialGradient1)"></path></svg>
-<div class="footer">
+<svg class="bottom-cta-section-curve" viewBox="0 0 100 100" preserveAspectRatio="none">
+<defs>
+     <defs>
+      <linearGradient id="RadialGradient5">
+        <stop offset="15%" stop-color="#fa9a0b"/>
+        <stop offset="41%" stop-color="#fbaa0f"/>
+        <stop offset="58%" stop-color="#fbaa0f"/>
+        <stop offset="87%" stop-color="#fa9a0b"/>  
+      </linearGradient>
+  </defs>
+  </defs>
+<path d="M0 100, C 25 0, 75 0, 100 100" id="footer-curve" fill="url(#RadialGradient5)"></path>
+</svg>
+<div class="footer" id="footer">
     <div class="container">
         <div class="footer-info">
             <ul class="footer-info_inner">
@@ -320,7 +324,9 @@
         </div>
     </div>
 </div>
-
+<div id="back-top">
+    <button type="button" class="btn-up"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+</div>
 
 
 
@@ -330,8 +336,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
-    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <script src="libs/slick-carousel/slick/slick.min.js"></script>
     <script src="js/custom.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

@@ -58,10 +58,19 @@
     padding: 54px 0 48px 0;
   }
   .galery-img .text-inner:last-child h4 {
-    padding: 41px 0 23px 0;
+    padding: 48px 0 23px 0;
   }
   .text-exposition {
     padding: 6px 9px 0px 12px;
+  }
+  .item-features h4.title-center {
+    margin: 48px 0 46px 0;
+  }
+  .form #phone-msg {
+    right: 220px;
+  }
+  .img-features.paper {
+    padding: 76px 0 0 0;
   }
 }
 
@@ -133,7 +142,7 @@
   }
   .galery-img .img-inner .text-inner_absolut h4 {
     padding: 40px 0 40px 0;
-    font-size: 36px;
+    font-size: 26px;
   }
   .title-setting {
     left: 53%;
@@ -149,16 +158,58 @@
   }
   .form input {
     width: 100%;
-    margin: 0 0px 12px 0;
+    margin: 0 0px 35px 0;
   }
   .text-inner_absolut {
     display: block;
   }
   .menu li a {
     display: block;
-    padding: 10px 8px;
+    padding: 10px 0px;
+    margin: 0 8px;
     color: #fff;
     font-size: 15px;
+  }
+  @-webkit-keyframes rot {
+    from {
+      -webkit-transform: rotate(0deg) translate(-5px) rotate(0deg);
+              transform: rotate(0deg) translate(-5px) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg) translate(-5px) rotate(-360deg);
+              transform: rotate(360deg) translate(-5px) rotate(-360deg);
+    }
+  }
+  @keyframes rot {
+    from {
+      -webkit-transform: rotate(0deg) translate(-5px) rotate(0deg);
+              transform: rotate(0deg) translate(-5px) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg) translate(-5px) rotate(-360deg);
+              transform: rotate(360deg) translate(-5px) rotate(-360deg);
+    }
+  }
+  .item-features h4.title-center {
+    margin: 48px 0 28px 0;
+  }
+  .form {
+    position: relative;
+  }
+  .form #userNameMsg {
+    width: 100%;
+    position: absolute;
+    bottom: 133px;
+    left: 0;
+  }
+  .form #phone-msg {
+    width: 100%;
+    position: absolute;
+    bottom: 47px;
+    right: 0;
+  }
+  .img-features.paper {
+    padding: 0;
   }
 }
 
@@ -193,9 +244,18 @@
     font-weight: 600;
   }
   .menu li:last-child {
-    padding: 0px 0 10px 10px;
+    padding: 7px 0 10px 10px;
     color: #002286;
     font-weight: 600;
+    overflow: hidden;
+  }
+  .menu li:last-child .size-small {
+    width: 70px;
+  }
+  .menu li:last-child span {
+    width: 90px;
+    float: left;
+    display: block;
   }
   .content-description .img-inner {
     width: 100%;
@@ -225,6 +285,12 @@
   .title-setting.improve:after {
     content: none;
   }
+  .menu a:before {
+    content: none;
+  }
+  .bottom-triangle_description {
+    height: 65px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -249,7 +315,7 @@
 @media only screen and (max-width: 580px) {
   .galery-img .img-inner .text-inner_absolut h4 {
     padding: 21px 0 21px 0;
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
@@ -284,13 +350,23 @@
     margin: 25px 0 0 0;
   }
   .galery-img .img-inner .text-inner_absolut h4 {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  .galery-img .img-inner:nth-child(9) .text-inner_absolut h4 {
+    padding: 15px 0 15px 0;
+    font-size: 17px;
   }
   .content-improve .title-setting_inner {
     margin: 0px 0px 112px 0;
   }
   .item-improve .item-icon {
     left: 37%;
+  }
+  #userNameMsg, #phone-msg, #messegeResult {
+    font-size: 13px;
+  }
+  .content-setting {
+    padding: 50px 0 53px 0;
   }
 }
 
@@ -300,11 +376,11 @@
   }
   .galery-img .img-inner .text-inner_absolut h4 {
     padding: 11px 0 11px 0;
-    font-size: 20px;
+    font-size: 14px;
   }
   .galery-img .img-inner:nth-child(9) .text-inner_absolut h4 {
     padding: 11px 0 11px 0;
-    font-size: 15px;
+    font-size: 11px;
   }
   .item-improve .item-icon {
     left: 32%;
